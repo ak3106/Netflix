@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    /* background-color: springgreen; */
+    height: 100%;
+    width: 100%;
+    background-color: rgb(73, 73, 73);
+}
+
+@font-face {
+    font-family: NetflixSans;
+    src: url(./NetflixSans-Bold.woff2);
+    /* src: url(./HelveticaNeueUltraLight.otf); */
+}
+
+header {
+    background-image: url(./bg.jpg);
+    height: 100vh;
+    /* width: 100%; */
+    background-position: center center;
+    position: relative;
+
+}
+
+header .box {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.61;
+
+}
+
+/* .img {
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    z-index: 10;
+    left: 169px;
+} */
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    top: -8px;
+    right: 130px;
+}
+
+nav div {
+    position: absolute;
+    top: 26px;
+    right: 185px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 0 10px;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.345);
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.signin {
+    border: none;
+    background-color: red;
+}
+
+#lang {
+    font-size: 10px;
+    padding: 0px 0px;
+
+}
+
+#language {
+    background-color: transparent;
+    color: white;
+    /* padding: 10px; */
+    border: none;
+    font-weight: 600;
+}
+
+option {
+    color: black;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    color: white;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 155px 155px 15px 155px;
+    /* font-size: 20px; */
+    /* font-family: NetflixSans;
+    font-weight: 900; */
+    /* padding: 40px; */
+}
+
+.home h1 {
+    font-family: NetflixSans;
+    font-size: 55px;
+}
+
+.home p {
+    font-family: poppins;
+    padding: 10px 0px;
+    /* font-size: 24px; */
+    font-weight: 100;
+}
+
+.p1 {
+    font-size: 24px;
+}
+
+.p2 {
+    font-size: 18px;
+}
+
+.register {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register input {
+    margin: px 12px;
+    position: absolute;
+    left: 456px;
+    padding: 18px;
+    width: 385px;
+    background-color: rgba(0, 0, 0, 0.186);
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.403);
+    border-radius: 4px;
+}
+
+.register button {
+    position: absolute;
+    left: 852px;
+    /* font-family: poppins; */
+    background-color: red;
+    font-size: 25px;
+    color: white;
+    padding: 13px 17px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 4px;
+
+}
+
+.register button img {
+    filter: invert(100%) saturate(0%) brightness(1000%);
+    padding: 0px 5px;
+}
+
+.lust-stories {
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    /* margin: 10px 10px 10px 10px; */
+    margin-top: 8px;
+    color: white;
+    font-family: poppins;
+}
+
+.lust-stories h2 {
+    position: absolute;
+    left: 200px;
+    font-size: 3rem;
+    font-weight: 900
+}
+
+.lust-stories span {
+    position: relative;
+    left: 200px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    top: 100px;
+}
+
+.lust-stories img {
+    position: absolute;
+    right: 150px;
+    z-index: 10;
+}
+
+.lust-stories video {
+    position: relative;
+    left: 313px;
+    top: -6px;
+}
+
+.mbb {
+    background-color: black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    /* margin: 10px 10px 10px 10px; */
+    margin-top: 8px;
+    color: white;
+    font-family: poppins;
+}
+
+.mbb h2 {
+    position: absolute;
+    right: 200px;
+    font-size: 3rem;
+    font-weight: 900
+}
+
+.mbb p {
+    position: relative;
+    left: 780px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    top: 120px;
+}
+
+.mbb .img {
+    /* height: 480px;
+    width: 640px; */
+    position: relative;
+    right: 550px;
+    top: -20px;
+    /* z-index: 10; */
+}
+
+#eleven {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    /* color: black; */
+    align-items: center;
+    width: 300px;
+    position: relative;
+    right: 966px;
+    top: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.441);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.st {
+    padding: 10px 10px;
+    padding-right: 50px;
+}
+
+.st span {
+    color: blue;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.rajma video {
+    position: relative;
+    left: 417px;
+    top: -65px;
+}
+
+.kids img {
+    position: relative;
+    right: 550px;
+    top: 20px;
+}
+
+.faq {
+    margin-top: 8px;
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq h1 {
+    font-family: poppins;
+    font-size: 48px;
+    padding-top: 48px;
+}
+
+.Questions {
+    width: 80vw;
+    height: 80vh;
+    /* background-color: rgb(197, 12, 12); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .wow{
+    width: 75vw;
+    background-color: rgb(48, 48, 48);
+    margin: 5px;
+    padding: 38px;
+    height:25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-right:300px;
+}*/
+.wow {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    width: 80vw;
+    height: 13vh;
+    margin: 5px auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expanded {
+    height: 500vh;
+}
+
+.first {
+    margin-top: 30px;
+}
+
+.wow svg {
+    filter: invert(1);
+}
+
+.registeragain {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.ready {
+    padding-top: 10px;
+    font-family: poppins;
+}
+
+.set {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* padding-left: 300px; */
+    /* background-color: wheat; */
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.set button {
+    background-color: red;
+    font-size: 25px;
+    color: white;
+    padding: 13px 17px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.set input {
+    margin: 0px 12px;
+    /* position: absolute; */
+    /* left: 456px;  */
+    padding: 18px;
+    width: 385px;
+    background-color: rgba(42, 41, 41, 0.562);
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.403);
+    border-radius: 4px;
+}
+
+footer{
+    background-color: black;
+    /* margin-top: 8px; */
+    height: 50vh;
+    /* max-width: 30vw; */
+    margin: auto;
+    margin-top: 8px;
+    padding: 60px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer a{
+    color: white;
+    padding: 0px 0px;
+}
+.footer-item{
+    /* margin: 0px 30px; */
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+footer .call{
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+footer button{
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    /* background-color: #ae3838; */
+}
+#jaihind{
+    color:rgb(146, 146, 146);
+    margin: 20px;
+    
+}
